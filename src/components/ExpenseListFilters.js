@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import uuid from 'uuid';
 import { connect } from 'react-redux';
 import 'react-dates/initialize';
@@ -67,7 +67,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = dispatch => ({
     setTextFilter: text => dispatch(setTextFilter(text)),
     setStartDate: startDate => dispatch(setStartDate(startDate)),
-    setEndDate: enddate => dispatch(setEndDate(endDate)),
+    setEndDate: endDate => dispatch(setEndDate(endDate)),
     sortByDate: () => dispatch(sortbyDate()),
     sortByAmount: () => dispatch(sortByAmount())
 });
